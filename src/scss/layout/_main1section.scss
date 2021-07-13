@@ -1,0 +1,58 @@
+.main__section--tips {
+  padding: 30px 15px 45px;
+  display: flex;
+  flex-direction: column;
+  @media all and (min-width: 768px) {
+    padding: 30px 39px 60px;
+  }
+  @media all and (min-width: 1200px) {
+    padding: 60px 275px 60px;
+  }
+}
+.section__name {
+  font-size: 14px;
+  color: #8ccbea;
+  line-height: 30px;
+  @media all and (min-width: 1200px) {
+    font-size: 16px;
+  }
+}
+.section__title--tips {
+  font-size: $sizeTitleMobile;
+  font-family: $fontTitle;
+  line-height: 30px;
+  text-transform: capitalize;
+  margin-bottom: 15px;
+  @media all and (min-width: 768px) {
+    font-size: $sizeTitleTablet;
+    order: -1;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: $sizeTitleDesktop;
+  }
+}
+.section__text--tips {
+  font-size: $sizeTextMobile;
+  line-height: 30px;
+  color: #4a4a4a;
+  margin-bottom: 50px;
+  @media all and (min-width: 768px) {
+    font-size: $sizeTextTablet;
+    margin-bottom: 30px;
+  }
+}
+.article__link--tips {
+  display: block;
+  width: 76px;
+  text-align: center;
+  text-decoration: none;
+  margin-bottom: 45px;
+  padding: 10px 0;
+  @include buttons();
+  @media all and (min-width: 768px) {
+    width: 91px;
+  }
+  @media all and (min-width: 1200px) {
+    width: 160px;
+  }
+}

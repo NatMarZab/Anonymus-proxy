@@ -1,0 +1,20 @@
+// mixins
+@mixin section-elements() {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+@mixin buttons() {
+  border-radius: $buttonBorderRadius;
+  background-color: $colorButtons;
+  color: $colorHeader;
+  font-family: $fontText;
+  font-weight: $sizeButtonWeight;
+  font-size: 20px;
+  border: none;
+  &:hover {
+    transform: scale(1.5);
+  }
+}

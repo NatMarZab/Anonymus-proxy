@@ -1,0 +1,54 @@
+.page__header {
+  width: 100%;
+}
+
+.header__menu--hamburger {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0271bc;
+  padding: 14px 14px;
+}
+.hero {
+  height: 100vh;
+  background-image: url("../images/cover.jpg");
+  background-size: cover;
+  background-position: top;
+  @include section-elements;
+  justify-content: flex-end;
+}
+.header__title {
+  min-width: 290px;
+  font-size: 42px;
+  text-transform: uppercase;
+  line-height: 55px;
+  margin-bottom: 10px;
+  font-family: $fontTitle;
+  word-spacing: 100vw;
+  @media all and (min-width: 768px) {
+    font-size: 80px;
+    line-height: 106px;
+  }
+  @media all and (min-width: 1200px) {
+    font-size: 100px;
+    line-height: 132px;
+  }
+}
+.header__subtitle {
+  font-size: 16px;
+  width: 290px;
+}
+
+.header__container--scroll {
+  display: none;
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border-radius: 50%;
+  margin-bottom: 53px;
+  margin-top: 53px;
+  line-height: 50px;
+  @media all and (min-width: 768px) {
+    display: block;
+  }
+}
